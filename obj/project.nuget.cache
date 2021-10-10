@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "j59IAj4mg1OfwD4mQPgcnSu9KOKubf494sB9/f2v55FmzPIza1aCNIEVOrzI2bWsj4VGJW9wGY1lYZdUAdnzhA==",
+  "success": true,
+  "projectFilePath": "/Users/apple/Documents/GitHub/C-/C#.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/aspectcore.abstractions/2.2.0/aspectcore.abstractions.2.2.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/aspectcore.core/2.2.0/aspectcore.core.2.2.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/aspectcore.extensions.dependencyinjection/2.2.0/aspectcore.extensions.dependencyinjection.2.2.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/aspectcore.extensions.reflection/2.2.0/aspectcore.extensions.reflection.2.2.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0/microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.logging.configuration/5.0.0/microsoft.extensions.logging.configuration.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.logging.console/5.0.0/microsoft.extensions.logging.console.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.options.configurationextensions/5.0.0/microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
