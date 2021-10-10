@@ -6,9 +6,63 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using AspectCore.Extensions.DependencyInjection;
 using System.Collections.Generic;
+using Microsoft.Extensions.Caching.Memory;
+using System.Threading;
+using Microsoft.Extensions.Primitives;
 
 namespace C_
 {
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            MemoryCache cache = new MemoryCache(new MemoryCacheOptions()
+            {
+                //SizeLimit = 100
+            });
+
+            CancellationTokenSource tokenSource = new CancellationTokenSource();
+
+            var option = new MemoryCacheEntryOptions()
+            {
+                AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(10)
+            };
+
+            option.RegisterPostEvictionCallback((key, value, reason, obj) =>
+            {
+                Console.WriteLine(reason);
+            });
+
+            option.AddExpirationToken(new CancellationChangeToken(tokenSource.Token));
+
+            cache.Set("Key", "Value", option);
+
+            //while (true)
+            //{
+            //    cache.Get("Key");
+
+            //}
+
+            tokenSource.CancelAfter(2000);
+
+            Console.Read();
+
+            //for (int i = 0; i < 1000; i++)
+            //{
+            //    cache.Set<string>(i.ToString(), i.ToString(), new MemoryCacheEntryOptions()
+            //    {
+            //        Size = 1
+            //        //Size = i.ToString().Length
+            //    });
+            //    Console.WriteLine(cache.Count);
+            //}
+
+            //cache.Compact(0.2);
+            //Console.WriteLine(cache.Count);
+        }
+
+    }
 
     //class Program
     //{
@@ -36,7 +90,7 @@ namespace C_
 
 
     //}
-     
+
     //public class MyLogInterceptorAttribute : AbstractInterceptorAttribute
     //{
     //    public override Task Invoke(AspectContext context, AspectDelegate next)
@@ -67,7 +121,7 @@ namespace C_
 
     //        var cacheValue = context.ReturnValue.ToString();
 
-    //        cacheDic.Add(cacheKey, "From cache:"+ cacheValue);
+    //        cacheDic.Add(cacheKey, "From cache:" + cacheValue);
 
     //        return task;
     //    }
